@@ -1,4 +1,4 @@
-# <img src="logo.png" alt="2Chains" width="400px">
+# <img src="logo.png" alt="2Chains" width="300px">
 
 Smart contracts to build blockchain applications for supply chain management.
 
