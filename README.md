@@ -1,87 +1,46 @@
 # <img src="logo.png" alt="2Chains" width="300px">
 
-Smart contracts to build blockchain applications for supply chain management.
+Smart contracts library for supply chain management. These smart contracts can be used as both educational resources and as a way to start your own supply chain applications.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+To get started, navigate through the existing contracts and feel free to copy those that you like. You can deploy these contracts using truffle or get started using Remix.
+
+- [Truffle](https://truffleframework.com/)
+- [Remix Editor](https://remix.ethereum.org/#optimize=false&version=soljson-v0.5.0+commit.1d4f565a.js)
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+A basic understanding of Ethereum, solidity, and smart contracts is all you will need to get started.
 
-```
-Give examples
-```
+- [Ethereum](https://ethereum.org/)
+- [Solidity](https://solidity.readthedocs.io/en/v0.4.25/)
+- [Smart Contracts](https://en.wikipedia.org/wiki/Smart_contract)
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+There is currently no installation for this library but feel free to fork, clone, or download as you like.
 
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
+git clone https://github.com/joenyzio/2chains.git
 ```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+These contracts are not audited and it is not recommended that you deploy them as written to the live network. For practice you can deploy to the Ethereum test networks, or on a local blockchain using ganache.
 
 ## Built With
 
-- [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-- [Maven](https://maven.apache.org/) - Dependency Management
-- [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+- [Solidity](https://solidity.readthedocs.io/en/v0.5.0/) - Programming language for smart contracts
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+This library is currently a personal project with no other contributors. If you'd like to get involved as a contributor I'd love to hear from you. Visit my website at [joenyz.io](joenyz.io) to connect with me.
 
 ## Authors
 
-- **Billie Thompson** - _Initial work_ - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+- **Joe Nyzio** - [joenyz.io](joenyz.io)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
