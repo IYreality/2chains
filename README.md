@@ -1,6 +1,6 @@
 # <img src="logo.png" alt="2Chains" width="300px">
 
-Smart contracts library for supply chain management. These smart contracts can be used as both educational resources and as a way to start your own supply chain applications.
+**Smart contracts library for supply chain management.** These are meant to be used mostly as educational resources for developers getting started in this space.
 
 ## Getting Started
 
