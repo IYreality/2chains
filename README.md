@@ -1,6 +1,6 @@
 # <img src="logo.png" alt="2Chains" width="300px">
 
-**Smart contracts library for supply chain management.** These are meant to be used mostly as educational resources for developers getting started in this space.
+**Smart contract library for supply chain management.** These are meant to be used mostly as educational resources for developers getting started in this space.
 
 ## Getting Started
 
