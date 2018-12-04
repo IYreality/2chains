@@ -2,6 +2,8 @@
 
 **Smart contract library for supply chain management.** These are meant to be used mostly as educational resources for developers getting started in this space.
 
+[Home Page](https://2chains.io/)
+
 ## Getting Started
 
 To get started, navigate through the existing contracts and feel free to copy those that you like. You can deploy these contracts using truffle or get started using Remix.
