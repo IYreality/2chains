@@ -1,0 +1,17 @@
+mixin searchDroneForm(drone = {})
+        //- From address, long, lat
+        //- .card
+        .card
+            label(for='address') Pickup From
+            input(type="text" id="fromAddress" name="fromAddress" class="search-address" placeholder="Enter Pickup Location" value="")
+            input(type="hidden" id="fromLng" name="fromLng" value="" ) 
+            input(type="hidden" id="fromLat" name="fromLat" value="" )
+
+            //- address, long, lat
+            label(for='address') Deliver To
+            input(type="text" id="toAddress" name="toAddress" class="search-address" placeholder="Enter Delivery Location" value="")
+            input(type="hidden" id="toLng" name="toLng"  value="") 
+            input(type="hidden" id="toLat" name="toLat" value="") 
+
+            input(type="button", value="Search Drones" class="submitButton" id="searchDrones")
+

@@ -1,0 +1,59 @@
+<!-- Navigation -->
+
+   <% include header%>
+   
+  <script src="/javascripts/accountInformation.js"></script>
+  <!-- Page Content -->
+  <br></br><br></br>
+  <input type="hidden" value="<%= address %>" id="address">
+
+  <div class="container" role="main">
+    <div class="row">
+        <div class="col-md-4">
+            <center>
+               <h2 id="companyname" style="color:red;" ></h2>
+            </center>            
+            <div class="panel-group">
+                <div class="panel panel-success">
+                    <div class="panel-heading" >Information</div>
+                    <div class="panel-body test">                      
+                        <div class="form-group row">
+                            <label for="companyaddress">Address*:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                            <label  id="companyaddress" style="color:brown; font-weight: bold;" ></label>
+                        </div>
+                        <div class="form-group row">
+                            <label for="owner">Owner*:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                            <label id="owner" style="color:brown; font-weight: bold;"><%= address %></label>
+                        </div>
+                        <div class="form-group row">
+                            <label for="phonenumber" >Phone Number*:&nbsp</label>
+                            <label id="phonenumber" style="color:brown; font-weight: bold;""></label>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email">Email*:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                            <label id="email" style="color:brown; font-weight: bold;"></label>
+                        </div>
+                        <div class="form-group row">
+                            <label for="checkRaw">Be raw producer*:&nbsp&nbsp&nbsp</label>
+                            <label id="checkraw"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>                   
+        </div>
+                  
+          
+            <div class="col-md-8">
+                <center>
+                    <h2 align="center" style="color:red;">Product of this account</h2>
+                </center>
+                <div id="tableAccountInfo" style="margin-left:0%; margin-right:0%;"></div>
+            </div>
+        </div>
+    </div>
+
+
+  <br></br>  <br></br>  <br></br>  <br></br>  <br></br>
+  <!-- Footer -->
+    <% include footer%>
+

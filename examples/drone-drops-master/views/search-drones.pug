@@ -1,0 +1,17 @@
+extends layout
+include mixins/_searchDroneForm
+include mixins/_droneCard
+
+block content
+    .inner
+        h2= title
+        .flash-messages(id='searchDroneErr' hidden)
+            Err.flash.flash--error
+                p.flash__text Enter Address
+        +searchDroneForm()
+        if drones
+            .inner
+                .drones
+                    each drone in drones
+                        +droneCard(drone)
+        #map

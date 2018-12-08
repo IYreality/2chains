@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tracking of High Value Parts</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>Components</h1>
+  <h3>You have <span class="black"><span id="ownedComponents"></span> META</span></h3>
+
+  <br>
+  <h1>Create new component</h1>
+  <br><label for="type">Component Type:</label><input type="text" id="compType" placeholder="e.g., CPU"></input>
+  <br><label for="identityNo">ID No.:</label><input type="text" id="identityNo" placeholder="e.g., 123456"></input>
+  <br><br><button id="create" onclick="App.createComponent()">Create</button>
+  <br><br>
+  <span id="status"></span>
+  <br>
+</body>
+</html>

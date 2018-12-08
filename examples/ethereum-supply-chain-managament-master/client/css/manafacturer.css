@@ -1,0 +1,15 @@
+.myCars{
+    margin-left:20px;
+}
+
+.right, .left{
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: 200px;
+}
+.back{
+    margin-left: 20px;
+}
+.dist_list{
+    cursor: pointer;
+}

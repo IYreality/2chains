@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/nprogress.css" rel="stylesheet" />
+    <link href="/css/green.css" rel="stylesheet" />
+    <link href="/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" />
+    <link href="/css/jqvmap.min.css" rel="stylesheet" />
+    <link href="/css/custom.min.css" rel="stylesheet" />
+    <link href="/css/Pretty-Footer.css" rel="stylesheet" />
+    <link href="/css/Pretty-Registration-Form.css" rel="stylesheet" />
+    <link href="/fonts/font-awesome.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link href="/css/table.css" rel="stylesheet" />
+
+    <!-- js -->
+    <script src="/js/jquery-1.12.4.js"></script>
+    <script src="/js/web3.js"></script>
+
+    <!-- javascripts-->
+    <script src="/javascripts/config.js"></script>
+    <script src="/javascripts/network.js"></script>
+    
+
+    <!-- DataTable -->
+    <link href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+</head>
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="/index" id="linkHome" class="site_title"><span>SUPPLY CHAIN</span></a>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="/img/admin.png" alt="..." class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Welcome,</span>
+                            <h2>Admin</h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+
+                    <br />
+
+                    <!-- sidebar menu -->
+                   <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <h3>Menu</h3>
+                            <ul class="nav side-menu">
+                                <li>
+                                    <a id="Account"><i class="fa fa-home"></i>Manage Account</a>
+                                       
+                               
+                                </li>
+                                <li>
+                                    <a id="Product"><i class="fa fa-table"></i>Manage Product</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+
+                document.getElementById('Account').href = window.location.origin + "/admintrator/listAccount";
+
+                document.getElementById('Product').href = window.location.origin + "/admintrator/listProduct";
+
+
+            </script>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu" style="margin-bottom: 0px">
+                    <nav>
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+
+                        
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+            <!-- page content -->
+            <div class="right_col table-responsive" role="main" style="height: 90%; min-height: 700px;" id="content">
+                <!-- top tiles -->
+                <div class="container" id="content">
+                    <div class="row test">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <input type="hidden" value="<%= idx %>" id="idx">
+            <h1  style="color: red;  margin-top:2%" align="center">Edit this account</h1>
+              <div class="form-group row">
+                <label for="chooseaccount " class="col-md-3 col-xs-12 text-left">Account</label>
+                <input type="text" name="account" class="col-md-9 col-xs-12 form-control" id="account" value="${add}" placeholder="Account" disabled>
+              </div>
+              <div class="form-group row">
+                <label for="name " class="col-md-3 col-xs-12 text-left">Name</label>
+                <input type="text" name="name" class="col-md-9 col-xs-12 form-control" id="name" placeholder="Name">
+              </div>
+              <div class="form-group row">
+                <label for="description " class="col-md-3 col-xs-12 text-left">Description</label>
+                <input type="text" name="description" class="col-md-9 col-xs-12 form-control" id="description" placeholder="Description">
+              </div>
+              <div class="form-group row">
+                <label for="phonenumber " class="col-md-3 col-xs-12 text-left">Phone Number</label>
+                <input type="number" name="phonenumber" class="col-md-9 col-xs-12 form-control" id="phonenumber" placeholder="Phone Number">
+              </div>
+              <div class="form-group row">
+                <label for="email " class="col-md-3 col-xs-12 text-left">Email</label>
+                <input type="email" name="email" class="col-md-9 col-xs-12 form-control" id="email" placeholder="Email">
+              </div>
+              <div class="form-group row">
+                <label for="checkraw" class="col-md-3 col-xs-12 text-left">Check Raw</label>
+                <input type="checkbox" value="" id="checkraw"></label>
+              </div>
+              <div class="form-group row">
+                <label for="executefrom" class="col-md-3 col-xs-12 text-left">Execute From</label>
+                <input type="text" name="executefrom" class="col-md-9 col-xs-12 form-control" id="x" value="" disabled>
+              </div>
+              <div class="form-group row">
+                <label for="password" class="col-md-3 col-xs-12 text-left">Password</label>
+                <input type="password" name="password" class="col-md-9 col-xs-12 form-control" id="password" placeholder="Password">
+              </div>
+              <div class="form-group row">
+                <label class="col-md-5 col-xs-12 text-left"></label>
+                <button type="submit " class="col-md-2 col-xs-12 btn btn-primary " id="Button" onclick="submit();">Submit</button>
+                <label class="col-md-5 col-xs-12 text-left"></label>
+              </div>
+            </div>
+          <div class="col-md-2"></div>
+      </div>
+                </div>
+                
+              
+            </div>
+           <!-- /page content -->
+            <!-- footer content -->
+            <div class="pull-right">
+                <footer>
+                    <div class="col-md-4 col-sm-6 footer-navigation">
+                        <h3><a href="#">Hddt <span>Team </span></a></h3>
+                        <p class="links"><a href="#">Đạt</a><strong> · </strong><a href="#">Dũng</a><strong> · </strong><a href="#">Hiển</a></p>
+                        <p class="company-name">SUPPLY CHAIN © 2017-2018 </p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 footer-contacts">
+                        <div>
+                            <span class="fa fa-map-marker footer-contacts-icon"> </span>
+                            <p><span class="new-line-span"></span> Danang, VietNam</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-phone footer-contacts-icon"></i>
+                            <p class="footer-center-info email text-left"> +84 (236) 625 3000</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope footer-contacts-icon"></i>
+                            <p> <a href="#" target="_blank"> FB</a></p>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-md-4 footer-about">
+                        <h4>About the company</h4>
+                        <p>
+                            We have been providing outstanding quality for software engineering and software testing services since 2007. Basing on demanding features collecting from many big names in IT and ITO industries.
+                        </p>
+                        <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </footer>
+            </div>
+            <!-- /footer content -->
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
+<script src="/javascripts/edit.js"></script>
